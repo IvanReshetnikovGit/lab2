@@ -35,7 +35,7 @@
         return amountT;
     }
 
-    void CathedraInfo(university NLTU,int dataC,int i)
+    void university::CathedraInfo(university NLTU,int dataC,int i)
     {
         cout<<"Cathedra name: "<<NLTU.institutions[dataC].Cathedras[i].getCathedraName()<<endl;
         cout<<"Head of Cathedra surname: "<<NLTU.institutions[dataC].Cathedras[i].getHeadOfDepartmentSurname()<<endl;
