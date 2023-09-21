@@ -4,9 +4,9 @@
 class institution
 {
     private:
-    std::string directorSurname;
+    string directorSurname;
     int amountOfCathedras;
-    std::string institutionName;
+    string institutionName;
 
     void setAmountOfCathedras();    
 
@@ -14,9 +14,15 @@ class institution
     cathedra *Cathedras;
     institution();
     ~institution();
-    void setDirectorsSurname(std::string directorSurname);
-    void setInstitutionName(std::string institutionsName);
+    
+
+    void setDirectorsSurname(string directorSurname);
+    void setInstitutionName(string institutionsName);
+
     int getAmountCathedras();
-    std::string getDirectorsSurname();
-    std::string getInstitutionName();
+    string getDirectorsSurname();
+    string getInstitutionName();
+
+    void institutionInfo(int dataI);
+
 };

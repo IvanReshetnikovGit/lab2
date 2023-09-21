@@ -3,16 +3,24 @@
 class university
 {
     int amountOfInstitutions;
-    std::string rectorSurname;
+    string rectorSurname;
+    string UniversityName;
     
 
     public:
     institution *institutions;
     university(int amountOfInstitutions);
     ~university();
-    void setRectorSurname(std::string rectorSurname);
-    std::string getRectorSurname();
-    int amountEmployees(university NLTU);
-    void CathedraInfo(university NLTU,int dataC,int i);
 
+    void setRectorSurname(std::string rectorSurname);
+    string getRectorSurname();
+
+    int amountEmployees();
+
+    void ACathedraInf();
+    void AInstitutionInf();
+    void AUniversityInf();
+
+    void EditInstitutions(bool usrStop);
+    void EditUniversity();
 };

@@ -8,8 +8,12 @@
 
     void institution::setAmountOfCathedras()
     {
-        std::cout<<"Enter amount of Cathedras in this institution: ";
-        std::cin>>amountOfCathedras;
+        cout<<"Enter name of institution: ";
+        cin>>institutionName;
+        cout<<"Enter amount of Cathedras in this institution: ";
+        cin>>amountOfCathedras;
+        cout<<"Enter director surname: ";
+        cin>>directorSurname;
     }
 
     void institution::setDirectorsSurname(std::string directorSurname)
@@ -34,8 +38,17 @@
         return institutionName;
     }
 
-
     institution::~institution()
     {
         delete[] Cathedras;
     }
+
+     void institution::institutionInfo( int dataI)
+    {
+        cout<<"Institution №"<<dataI<<" information:"<<endl;
+        cout<<"Institution name: "<<institutionName<<endl;
+        cout<<"Amount of Cathedras: "<<amountOfCathedras<<endl;
+        cout<<"Directors surname: "<<directorSurname<<endl<<endl;
+    }
+
+    

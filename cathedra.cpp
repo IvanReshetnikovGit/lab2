@@ -1,6 +1,6 @@
 #include "cathedra.h"
 
-    void cathedra::setHeadOfDepartmentSurname(std::string headOfDepartmentSurname) 
+    void cathedra::setHeadOfDepartmentSurname(string headOfDepartmentSurname) 
     {
         this->headOfDepartmentSurname = headOfDepartmentSurname;
     }
@@ -9,15 +9,15 @@
     {
         this->employeesAmount=employeesAmount;
     }
-    void cathedra::setCathedraName(std::string cathedraName)
+    void cathedra::setCathedraName(string cathedraName)
     {
         this->cathedraName=cathedraName;
     }
-    std::string cathedra::getHeadOfDepartmentSurname()
+    string cathedra::getHeadOfDepartmentSurname()
     {
         return headOfDepartmentSurname;
     }
-    std::string cathedra::getCathedraName()
+    string cathedra::getCathedraName()
     {
         return cathedraName;
     }
@@ -26,5 +26,9 @@
         return employeesAmount;
     }
 
-   
-
+    void cathedra::CathedraInfo()
+    {
+        cout<<"Cathedra name: "<<cathedraName<<endl;
+        cout<<"Head of Cathedra surname: "<<headOfDepartmentSurname<<endl;
+        cout<<"Amount of employees: "<<employeesAmount<<endl<<endl;
+    }

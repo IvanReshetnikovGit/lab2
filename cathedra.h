@@ -9,12 +9,16 @@ class cathedra
     std::string cathedraName;
 
     public:
+    
     void setHeadOfDepartmentSurname(std::string headOfDepartmentSurname);
     void setEmployeesAmount(int employeesAmount);
     void setCathedraName(std::string cathedraName);
+
     std::string getHeadOfDepartmentSurname();
     std::string getCathedraName();
     int getEmployeesAmount();
+
+    void CathedraInfo();
 
     
 };
